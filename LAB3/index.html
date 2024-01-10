@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drum Kit</title>
 </head>
+
 <body>
-    <audio src="./sounds/clap.wav" controls id="s1"></audio>
-    <audio src="./sounds/hihat.wav" controls id="s2"></audio>
+    <audio src="./sounds/clap.wav" id="s1"></audio>
+    <audio src="./sounds/hihat.wav" id="s2"></audio>
+    <audio src="./sounds/kick.wav" id="s3"></audio>
+    <audio src="./sounds/openhat.wav" id="s4"></audio>
+    <audio src="./sounds/boom.wav" id="s5"></audio>
+    <audio src="./sounds/ride.wav" id="s6"></audio>
+    <audio src="./sounds/snare.wav" id="s7"></audio>
+    <audio src="./sounds/tom.wav" id="s8"></audio>
+    <audio src="./sounds/tink.wav" id="s9"></audio>
+    <audio src="./sounds/metronome.wav" id="metronome"></audio>
+
+    <div>
+        <button onclick="toggleRecording(0)">Toggle Record Channel 1</button>
+        <button onclick="toggleChannelSelection(0)">Select Channel 1</button>
+        <button onclick="playRecording(0)">Play Channel 1</button>
+
+        <button onclick="toggleRecording(1)">Toggle Record Channel 2</button>
+        <button onclick="toggleChannelSelection(1)">Select Channel 2</button>
+        <button onclick="playRecording(1)">Play Channel 2</button>
+
+        <button onclick="toggleRecording(2)">Toggle Record Channel 3</button>
+        <button onclick="toggleChannelSelection(2)">Select Channel 3</button>
+        <button onclick="playRecording(2)">Play Channel 3</button>
+
+        <button onclick="toggleRecording(3)">Toggle Record Channel 4</button>
+        <button onclick="toggleChannelSelection(3)">Select Channel 4</button>
+        <button onclick="playRecording(3)">Play Channel 4</button>
+    </div>
+
+    <div>
+        <button onclick="playSelectedChannels()">Play Selected Channels</button>
+        <button onclick="toggleMetronome(120)">Toggle Metronome 120 BPM</button>
+    </div>
+
     <script src="drumkit.js"></script>
-</body> 
+</body>
+
 </html>
