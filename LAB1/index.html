@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" type="text/javascript" defer></script>
+    <title>Lab 1</title>
+  </head>
+  <body>
+      <h1>Lab 1</h1>
+      <h2>Programowanie w JavaScript</h2>
+      <h3>Podstawowe operacje matematyczne</h3>
+      
+      <button id="addInput" onclick="newInput()">Dodaj pole</button>
+      <button id="removeInput" onclick="removeLastInput()">Usuń pole</button>
+      
+      <div id="numbers-container">
+          <input type="number" class="number" value="0" />
+          <input type="number" class="number" value="0" />
+          <input type="number" class="number" value="0" />
+        </div>
+        <div id="result-container">
+            sum: <span id="sum"></span><br />
+            avg: <span id="avg"></span><br />
+            min: <span id="min"></span><br />
+            max: <span id="max"></span><br />
+        </div>
+  </body>
+</html>
