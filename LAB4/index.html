@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Note Pocket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="search-form">
+        <input type="text" id="search-query" placeholder="Search notes...">
+        <button onclick="searchNotes()">Search</button>
+    </div>
+
+    <div id="note-form">
+        <input type="text" id="note-title" placeholder="Title">
+        <textarea id="note-content" placeholder="Content"></textarea>
+        <input type="color" id="note-color">
+        <input type="text" id="note-tags" placeholder="Tags (comma separated)">
+        <input type="datetime-local" id="note-reminder">
+        <label>
+            Pin this note <input type="checkbox" id="note-pin">
+        </label>
+        <button onclick="addNote()">Add Note</button>
+    </div>
+
+    <div id="notes-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

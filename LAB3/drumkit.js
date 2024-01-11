@@ -41,7 +41,7 @@ function toggleRecording(channel) {
     isRecording[channel] = !isRecording[channel];
     if (isRecording[channel]) {
         startTime[channel] = Date.now();
-        recordings[channel] = []; // Nadpisanie zawartości kanału
+        recordings[channel] = [];
     }
 }
 
